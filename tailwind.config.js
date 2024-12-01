@@ -26,6 +26,9 @@ module.exports = {
                                 'body': ['Nunito'],
                                 'title': ['Lato']
                         },
+                        screens: {
+                                'md-lg': { min: '1024px', max: '1439px' }, // Between 1024px and 1440px
+                              },
                 },
         },
         plugins: [],

@@ -2,7 +2,7 @@
 @section('content')
     <div id="app" class="w-full">
     </div>
-    <div class="flex flex-col lg:flex-row items-center justify-center px-10 xl:px-16 py-8 bg-white">
+    <div class="flex flex-col max-lg:flex-col-reverse lg:flex-row items-center justify-center px-10 xl:px-16 py-8 bg-white">
     <!-- Left Section -->
     <div class="flex flex-row items-center lg:items-start lg:flex-1 xl:pr-6">
         <div class="relative">
@@ -61,7 +61,7 @@
     </li>
 </ul>
         <!-- <div class="bar"></div> -->
-        <div class="mt-8">
+        <div class="my-8">
 
           <button
             class="rounded-md px-4 py-2 bg-accent-500 text-xl font-bold text-white"

@@ -66,7 +66,7 @@
         </div>
       </div>
       <!-- Video Section -->
-      <div class="flex-shrink-0 w-2/5">
+      <div class="flex-shrink-0 lg:w-2/5 w-4/5">
         <div class="relative pb-[56.25%] h-0">
           <iframe
             class="absolute top-0 left-0 w-full h-full"

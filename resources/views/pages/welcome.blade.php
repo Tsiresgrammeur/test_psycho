@@ -36,7 +36,7 @@
         <span class="ml-3 flex font-bold font-title items-center justify-center w-12 h-12 bg-white text-accent-500 rounded-full text-xl shadow-lg z-10">
             1
         </span>
-        <p class="ml-3 font-title text-base xl:text-lg w-full">
+        <p class="ml-3 xl:ml-6  font-title text-base xl:text-lg w-full">
             <span class="font-semibold">Réservez en ligne :</span> Choisissez votre créneau horaire et votre psychologue agréé.
         </p>
     </li>
@@ -45,7 +45,7 @@
         <span class="ml-3  flex font-bold font-title items-center justify-center w-12 h-12 bg-white text-accent-500 rounded-full text-xl shadow-lg z-10">
             2
         </span>
-        <p class="ml-3 font-title text-base xl:text-lg w-full">
+        <p class="ml-3 xl:ml-6  font-title text-base xl:text-lg w-full">
             <span class="font-semibold">Passez votre test :</span> Vous serez accueilli par un de nos psychologues qui vous expliquera le déroulement du test.
         </p>
     </li>
@@ -54,7 +54,7 @@
         <span class="ml-3  flex font-bold font-title items-center justify-center w-12 h-12 bg-white text-accent-500 rounded-full text-xl shadow-lg z-10">
             3
         </span>
-        <p class="ml-3 font-title text-base xl:text-lg w-full">
+        <p class="ml-3 xl:ml-6 font-title text-base xl:text-lg w-full">
             <span class="font-semibold">Recevez vos résultats :</span> Vous recevrez vos résultats le jour même de votre test.
         </p>
     </li>

@@ -107,20 +107,20 @@
             Votre entraînement Gratuit inclus
           </h2>
           <div class="font-title text-[#424242] text-lg space-y-4">
-            <p class="lg:text-base font-title mr-0 xl:mr-0 xl:text-lg lg:mr-6">
+            <p class="lg:text-base font-title lg:-mr-4 xl:mr-0 xl:text-lg">
               <span class="font-semibold"
                 >Pour vous préparez au mieux à votre test,</span
               >
               nous avons mis à votre disposition un entraînement des types de
               test que vous pouvez rencontrer lors de votre examen.
             </p>
-            <p class="lg:text-base font-title mr-0 xl:mr-8 xl:text-lg lg:mr-8">
+            <p class="lg:text-base font-title mr-0 xl:mr-8 xl:text-lg ">
               Pour avoir accès à cet entraînement rien de plus simple : Réservez
               votre test psychotechnique et vous recevrez par mail vos
               identifiants pour commencer à vous
               <span class="font-semibold">entraîner en illimité !</span>
             </p>
-            <p class="lg:text-base font-title mr-0 xl:mr-8 xl:text-lg lg:mr-8">
+            <p class="lg:text-base font-title mr-0 xl:mr-8 xl:text-lg">
               Ne laissez pas la peur vous freiner dans votre démarche, entrainez
               vous dès maintenant et soyez prêt pour le jour j.
             </p>

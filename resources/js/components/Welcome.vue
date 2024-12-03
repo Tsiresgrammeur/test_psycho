@@ -9,9 +9,8 @@
         class="w-auto h-auto max-w-[200px] md:max-w-[300px]"
       />
     </div>
-
     <div
-      class="flex items-center justify-center lg:space-x-8 space-y-8 lg:space-y-0"
+      class="flex lg:flex-row flex-col items-center justify-center lg:space-x-8 space-y-8 lg:space-y-0"
     >
       <!-- Left Content -->
       <div class="flex-1">
@@ -19,7 +18,7 @@
           class="flex flex-col items-start justify-center text-center lg:text-left"
         >
           <h1
-            class="lg:text-3xl text-xl font-bold font-title leading-tight mb-2 title"
+            class="lg:text-2xl text-xl font-bold font-title leading-tight mb-2 title"
           >
             Test psychotechnique : Récupérez votre permis
           </h1>
@@ -29,24 +28,22 @@
             Une démarche simple & rapide
           </h2>
         </div>
-
         <ul class="space-y-2 mb-6 text-center lg:text-left">
           <li
-            class="lg:pl-0 pl-7 flex flex-row items-start justify-center lg:justify-start"
+            class="lg:pl-0 pl-7 flex items-start justify-center lg:justify-start"
           >
             <i class="fa fa-check-circle px-2 text-green-300 font-light"></i>
-            <p class="w-full">97.8% de réussite à l'examen psychotechnique</p>
+            <span>97.8% de réussite à l'examen psychotechnique</span>
           </li>
           <li class="pr-1 flex items-start justify-center lg:justify-start">
             <i class="fa fa-check-circle px-2 text-green-300 font-light"></i>
-            <p class="w-full">Recevez vos résultats le jour de votre test</p>
+            <span>Recevez vos résultats le jour de votre test</span>
           </li>
           <li class="pr-2 flex items-start justify-center lg:justify-start">
             <i class="fa fa-check-circle px-2 text-green-300 font-light"></i>
-            <p class="w-full">Centre enregistré, psychologues certifiés</p>
+            <span>Centre enregistré, psychologues certifiés</span>
           </li>
         </ul>
-
         <div
           class="flex-col flex items-center justify-center text-center lg:w-fit"
         >
@@ -56,22 +53,19 @@
             Je réserve mon test psychotechnique
             <i class="fa fa-angle-right"></i>
           </button>
-
           <p class="mt-2 flex text-center">
             <i class="fa fa-hand-pointer font-light mr-2"></i>Entraînement
             Gratuit inclus
           </p>
-
           <div class="flex">
             <p>text 1</p>
             <p>text 2</p>
           </div>
         </div>
       </div>
-
       <!-- Video Section -->
-      <div class="flex-shrink-0 w-1/3 top-0">
-        <div class="relative pb-[56.25%] flex-grow h-0">
+      <div class="flex-shrink-0 w-2/5">
+        <div class="relative pb-[56.25%] h-0">
           <iframe
             class="absolute top-0 left-0 w-full h-full"
             src="https://www.youtube.com/embed/zmjPmzJFEFA"
@@ -86,11 +80,9 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
 };
 </script>
-
 <style>
 </style>

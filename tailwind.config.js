@@ -27,7 +27,7 @@ module.exports = {
                                 'title': ['Lato']
                         },
                         screens: {
-                                //'max-lg': { max: '1023px' },
+                                'lg-xl': { min: '1024px', max: '1279px' }, 
                               },
                 },
         },

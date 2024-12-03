@@ -5,3 +5,6 @@
 
     <div id="steps" class="w-full">
     </div>
+
+    <div id="thought" class="w-full">
+    </div>

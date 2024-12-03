@@ -18,30 +18,32 @@
           class="flex flex-col items-start justify-center text-center lg:text-left"
         >
           <h1
-            class="lg:text-2xl text-xl font-bold font-title leading-tight mb-2 title"
+            class="xl:text-3xl text-2xl font-bold font-title w-full leading-tight mb-2 title"
           >
             Test psychotechnique : Récupérez votre permis
           </h1>
           <h2
-            class="text-lg lg:text-xl font-title text-[#1E1E1E] leading-tight mb-2"
+            class="text-xl xl:text-2xl font-title text-[#1E1E1E] leading-tight mb-2"
           >
             Une démarche simple & rapide
           </h2>
         </div>
-        <ul class="space-y-2 mb-6 text-center lg:text-left">
-          <li
-            class="lg:pl-0 pl-7 flex items-start justify-center lg:justify-start"
-          >
-            <i class="fa fa-check-circle px-2 text-green-300 font-light"></i>
-            <span>97.8% de réussite à l'examen psychotechnique</span>
+        <ul class="space-y-2 mb-6 pl-2 text-left">
+          <li class="flex items-start">
+            <i class="fa fa-check-circle text-green-300 font-light"></i>
+            <span class="ml-2"
+              >97.8% de réussite à l'examen psychotechnique</span
+            >
           </li>
-          <li class="pr-1 flex items-start justify-center lg:justify-start">
-            <i class="fa fa-check-circle px-2 text-green-300 font-light"></i>
-            <span>Recevez vos résultats le jour de votre test</span>
+          <li class="flex items-start">
+            <i class="fa fa-check-circle text-green-300 font-light"></i>
+            <span class="ml-2"
+              >Recevez vos résultats le jour de votre test</span
+            >
           </li>
-          <li class="pr-2 flex items-start justify-center lg:justify-start">
-            <i class="fa fa-check-circle px-2 text-green-300 font-light"></i>
-            <span>Centre enregistré, psychologues certifiés</span>
+          <li class="flex items-start">
+            <i class="fa fa-check-circle text-green-300 font-light"></i>
+            <span class="ml-2">Centre enregistré, psychologues certifiés</span>
           </li>
         </ul>
         <div
@@ -81,8 +83,7 @@
   </div>
 </template>
 <script>
-export default {
-};
+export default {};
 </script>
 <style>
 </style>

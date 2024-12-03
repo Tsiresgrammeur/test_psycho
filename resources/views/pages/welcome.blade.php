@@ -1,23 +1,25 @@
 @extends('layouts.home')
 @section('content')
-    <div id="app">
+    <div id="app" class="w-full">
     </div>
     <div class="flex flex-col lg:flex-row items-center justify-center px-10 xl:px-16 py-8 bg-white">
     <!-- Left Section -->
     <div class="flex flex-row items-center lg:items-start lg:flex-1 xl:pr-6">
         <div class="relative">
             <!-- Phone Image -->
+            <div class="w-full max-w-lg">
             <img 
                 src="https://fakeimg.pl/669x669/?text=Phone&font=lobster" 
                 alt="Phone Image" 
-                class="rounded-lg shadow-lg w-4/5"
+                class="shadow-lg justify-center w-full lg:w-4/5"
             />
             <!-- User Image (circular overlay) -->
-            <div class="absolute top-16 xl:right-8 right-0 h-24 lg:w-48 lg:h-32 bg-white rounded-full shadow-lg flex items-center justify-center">
+</div>
+            <div class="absolute top-16 xl:right-8 lg:right-0 max-lg:-left-12 h-24 w-56 lg:w-48 lg:h-32 bg-white rounded-full shadow-2xl flex items-center justify-center">
                 <img 
                     src="https://fakeimg.pl/297x297/?text=User&font=lobster" 
                     alt="User Image" 
-                    class="rounded-full"
+                    class="rounded-full "
                 />
             </div>
         </div>

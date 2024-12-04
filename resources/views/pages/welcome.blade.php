@@ -11,3 +11,6 @@
 
     <div id="pink" class="w-full">
     </div>
+
+    <div id="prepare" class="w-full">
+    </div>

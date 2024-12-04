@@ -41,15 +41,13 @@
       </div>
 
       <!-- Review Cards Section -->
-      <div
-  class="flex flex-row gap-6 overflow-x-auto justify-center items-center"
->
+    <div class="flex flex-row gap-6 overflow-x-auto justify-center items-center">
   <!-- Loop for Cards -->
   <div
     v-for="(review, index) in reviews"
     :key="index"
     v-show="isVisible(index)"
-    class="bg-gray-100 gap-2 rounded-lg shadow-md p-4 max-lg:p-16 flex flex-col w-full xl:w-60 lg:w-72 max-h-96 overflow-visible"
+    class="bg-gray-100 gap-2 rounded-lg shadow-md p-4 max-lg:p-16 flex flex-col w-full xl:w-60 lg:w-72 max-h-96 overflow-hidden"
   >
     <div class="flex items-center mb-3">
       <img
@@ -74,12 +72,12 @@
   </div>
 </div>
 
-      <div class="flex justify-center items-center">
-        <i
-          class="fa fa-angle-right text-xl text-[#CBCBCB] cursor-pointer"
-          @click="next"
-        ></i>
-      </div>
+<div class="flex justify-center items-center">
+  <i
+    class="fa fa-angle-right text-xl text-[#CBCBCB] cursor-pointer"
+    @click="next"
+  ></i>
+</div>
     </div>
   </div>
 </template>
@@ -131,28 +129,43 @@ export default {
     window.removeEventListener("resize", this.updateIsMobile);
   },
   methods: {
-    updateIsMobile() {
-      this.isMobile = window.innerWidth < 1024; // Adjust for mobile view
-    },
-    next() {
+  updateIsMobile() {
+    this.isMobile = window.innerWidth < 1024; // Adjust for mobile view
+  },
+  next() {
+    if (this.isMobile) {
+      // On mobile, move to the next review in a loop.
+      this.currentIndex = (this.currentIndex + 1) % this.reviews.length;
+    } else {
+      // On larger screens, move in steps of cardsToShow.
       if (this.currentIndex < this.reviews.length - this.cardsToShow) {
         this.currentIndex++;
       }
-    },
-    prev() {
+    }
+  },
+  prev() {
+    if (this.isMobile) {
+      // On mobile, move to the previous review in a loop.
+      this.currentIndex = (this.currentIndex - 1 + this.reviews.length) % this.reviews.length;
+    } else {
+      // On larger screens, move in steps of cardsToShow.
       if (this.currentIndex > 0) {
         this.currentIndex--;
       }
-    },
-    isVisible(index) {
-      if (this.isMobile) {
-        return index === this.currentIndex;
-      } else {
-        const start = this.currentIndex;
-        const end = start + this.cardsToShow;
-        return index >= start && index < end;
-      }
-    },
+    }
   },
+  isVisible(index) {
+    if (this.isMobile) {
+      // For mobile, show one card based on currentIndex
+      return index === this.currentIndex;
+    } else {
+      // For larger screens, show multiple cards based on cardsToShow
+      const start = this.currentIndex;
+      const end = start + this.cardsToShow;
+      return index >= start && index < end;
+    }
+  },
+},
 };
+
 </script>

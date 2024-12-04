@@ -53,7 +53,7 @@
             class="rounded-md px-4 py-2 bg-[#BF2A6B] text-lg font-semibold font-title text-white"
           >
             Je réserve mon test psychotechnique
-            <i class="fa fa-angle-right"></i>
+            <i class="fa fa-angle-right text-base font-semibold"></i>
           </button>
           <p class="mt-2 flex items-center text-center">
             <i class="fa fa-hand-pointer font-light text-[#7E87B4] mr-2"></i><span class="font-mono">Entraînement

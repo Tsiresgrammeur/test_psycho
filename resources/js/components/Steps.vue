@@ -99,7 +99,7 @@
     </div>
 
     <div class="flex flex-col lg:flex-row px-10 xl:px-16 py-8 bg-white">
-  <div class="mb-32">
+  <div class="max-lg:mb-32">
     <div class="text-center lg:text-left items-center lg:items-start w-full max-lg:px-52">
       <h2
         class="mb-10 text-[27px] max-lg:text-[32px] xl:text-3xl font-title font-bold text-accent-500"
@@ -134,7 +134,7 @@
           </button>
     </div>
   </div>
-  <div class="w-full xl:w-full max-w-lg flex justify-center items-center mx-auto">
+  <div class="w-full xl:w-full max-w-lg flex justify-end items-center mx-auto">
   <img
     src="https://fakeimg.pl/669x669/?text=Laptop&font=lobster"
     alt="Laptop Image"

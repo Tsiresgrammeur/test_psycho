@@ -8,3 +8,6 @@
 
     <div id="thought" class="w-full">
     </div>
+
+    <div id="pink" class="w-full">
+    </div>

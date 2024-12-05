@@ -14,3 +14,5 @@
 
     <div id="prepare" class="w-full">
     </div>
+    <div id="book" class="w-full">
+    </div>

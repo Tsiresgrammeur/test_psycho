@@ -91,7 +91,7 @@
       <!-- Results Section -->
       <div class="grid grid-cols-1 lg:grid-cols-3 ">
         <!-- Left Section -->
-        <div class="lg:col-span-2 xl:w-full ">
+        <div class="lg:col-span-2 xl:w-full lg:w-[110%]">
           <div
             v-for="(result, index) in results"
             :key="index"
@@ -100,8 +100,8 @@
             <!-- Top Section: Date and Address -->
             <div class="flex justify-between">
               <div class="flex flex-row">
-                <p class="xl:text-lg lg:w-fit pb-[0.125rem]">{{ result.day }} <br/>{{ result.date }}</p>
-                <div class="text-lg ml-4  font-mono pb-1 flex flex-row items-end w-fit">
+                <p class="xl:text-lg lg:text-[0.95rem] lg:w-fit pb-[0.125rem]">{{ result.day }} <br/>{{ result.date }}</p>
+                <div class="xl:text-lg lg:text-[0.95rem] ml-4  font-mono xl:pb-1 pb-2 flex flex-row items-end w-fit">
                   <i class="fas fa-map-marker-alt text-2xl  text-[#6D6D6D] mr-1"></i>
                   {{ result.address }}
                 </div>
@@ -126,7 +126,7 @@
             <!-- Bottom Section: Warning and Button -->
             <div class="flex justify-between items-center">
               <div class="flex flex-row">
-              <p class="pr-3 text-lg">
+              <p class="pr-3 xl:text-lg lg:text-[0.95re">
                 {{result.street}}
               </p>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-100 px-4 lg:px-16">
+  <div class="min-h-screen bg-gray-100 px-10 xl:px-16">
     <div class="max-w-7xl mx-auto space-y-6">
       <div class="mb-8 text-center lg:text-left">
         <h2
@@ -89,24 +89,25 @@
       </div>
 
       <!-- Results Section -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 lg:grid-cols-3 ">
         <!-- Left Section -->
-        <div class="lg:col-span-2">
+        <div class="lg:col-span-2 xl:w-full ">
           <div
             v-for="(result, index) in results"
             :key="index"
-            class="bg-white shadow-md p-6 rounded-md mb-4"
+            class="bg-white shadow-md xl:p-6 lg:p-4 rounded-md mb-4"
           >
             <!-- Top Section: Date and Address -->
             <div class="flex justify-between">
               <div class="flex flex-row">
-                <p class="text-lg lg:w-1/4 pb-[0.125rem]">{{ result.day }} {{ result.date }}</p>
-                <div class="text-lg font-mono pb-1 flex flex-row items-end">
+                <p class="xl:text-lg lg:w-fit pb-[0.125rem]">{{ result.day }} <br/>{{ result.date }}</p>
+                <div class="text-lg ml-4  font-mono pb-1 flex flex-row items-end w-fit">
                   <i class="fas fa-map-marker-alt text-2xl  text-[#6D6D6D] mr-1"></i>
                   {{ result.address }}
                 </div>
               </div>
-              <div class="text-right flex flex-row items-end justify-between gap-2">
+              <div class="mr-4">
+              <div class="text-right flex justify-end flex-row items-end gap-1">
                 <p class="text-3xl font-bold font-title ">
                   {{ result.price }}€
                 </p>
@@ -114,12 +115,18 @@
                   {{ result.originalPrice }}€
                 </p>
               </div>
+              <div class="mr-4" >
+                <p class="text-xs">
+                  Après remboursement
+                </p>
+               </div>
+              </div>
             </div>
 
             <!-- Bottom Section: Warning and Button -->
-            <div class="flex justify-between items-center mt-4">
+            <div class="flex justify-between items-center">
               <div class="flex flex-row">
-              <p class="pr-3">
+              <p class="pr-3 text-lg">
                 {{result.street}}
               </p>
 
@@ -128,7 +135,7 @@
               </div>
               </div>
               <button
-                class="bg-[#BF2A6B] text-white px-4 py-2 rounded-md font-mono hover:bg-pink-600 text-center flex items-center"
+                class="bg-[#BF2A6B] text-white px-8 py-2 rounded-md font-mono hover:bg-pink-600 text-center flex items-center"
               >
                 RÉSERVER<i class="fas fa-angle-right ml-2"></i> 
               </button>
@@ -137,7 +144,7 @@
         </div>
 
         <!-- Right Section -->
-        <div class="bg-white shadow-md p-6 rounded-md">
+        <div class="bg-white shadow-md p-6 w-[91%] ml-20 -mx-10 rounded-md">
           <h3 class="text-lg font-semibold text-gray-700 mb-4">
             Les tests par ville à Aisne (02)
           </h3>

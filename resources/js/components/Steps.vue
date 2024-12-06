@@ -100,27 +100,27 @@
 
     <div class="flex flex-col lg:flex-row px-10 xl:px-16 py-8 bg-white">
   <div class="max-lg:mb-32">
-    <div class="text-center lg:text-left items-center lg:items-start w-full max-lg:px-52">
+    <div class="text-center lg:text-left items-center lg:items-start lg:w-[110%] xl:w-full max-lg:px-52">
       <h2
         class="mb-10 text-[27px] max-lg:text-[32px] xl:text-3xl font-title font-bold text-[#BF2A6B]"
       >
         Votre entraînement Gratuit inclus
       </h2>
       <div class="font-title text-[#424242] text-lg space-y-4 mb-11">
-        <p class="text-base max-lg:text-2xl max-lg:text-left font-title mx-auto lg:mx-0 lg:-mr-4 xl:mr-0 xl:text-lg">
+        <p class="text-[0.93rem] max-lg:text-2xl max-lg:text-left font-title mx-auto lg:mx-0 lg:-mr-4 xl:mr-0 xl:text-lg">
           <span class="font-semibold"
             >Pour vous préparez au mieux à votre test,</span
           >
           nous avons mis à votre disposition un entraînement des types de test
           que vous pouvez rencontrer lors de votre examen.
         </p>
-        <p class="text-base max-lg:text-2xl max-lg:text-left font-title mx-auto lg:mx-0 lg:-mr-4 xl:mr-0 xl:text-lg">
+        <p class="text-[0.93rem] max-lg:text-2xl max-lg:text-left font-title mx-auto lg:mx-0 lg:-mr-4 xl:mr-0 xl:text-lg">
           Pour avoir accès à cet entraînement rien de plus simple : Réservez
           votre test psychotechnique et vous recevrez par mail vos identifiants
           pour commencer à vous
           <span class="font-semibold">entraîner en illimité !</span>
         </p>
-        <p class="text-base max-lg:text-2xl max-lg:text-left font-title mx-auto lg:mx-0 lg:-mr-4 xl:mr-0 xl:text-lg">
+        <p class="text-[0.93rem] max-lg:text-2xl max-lg:text-left font-title mx-auto lg:mx-0 lg:-mr-4 xl:mr-0 xl:text-lg">
           Ne laissez pas la peur vous freiner dans votre démarche, entrainez
           vous dès maintenant et soyez prêt pour le jour j.
         </p>

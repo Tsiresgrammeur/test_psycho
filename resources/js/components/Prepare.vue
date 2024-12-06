@@ -47,7 +47,7 @@ export default {
         {
           question: "Combien de temps dure le test psychotechnique ?",
           answer:
-            "Un test psychotechnique est une évaluation des aptitudes cognitives et comportementales, souvent utilisée pour valider ou reprendre un permis de conduire.",
+            "Le test dure en moyenne 45 minutes, incluant des exercices et des discussions avec un psychologue agréé.",
         },
         {
           question:

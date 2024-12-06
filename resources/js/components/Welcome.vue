@@ -1,7 +1,7 @@
 <template>
-  <div class="homepage px-16 md:p-4 shadow-md rounded-md relative bg-[#F8F9FB] z-0  py-20">
+  <div class="homepage lg:p-4 shadow-md rounded-md relative bg-[#F8F9FB] z-0">
     <div
-      class="logo-desktop flex xl:px-16 max-lg:shadow-md flex-col items-center lg:items-start justify-center text-center w-full"
+      class="logo-desktop flex max-lg:py-4 max-lg:bg-white xl:px-16 max-lg:shadow-md flex-col items-center lg:items-start justify-center text-center w-full"
     >
       <img
         src="centre_national.png"
@@ -20,7 +20,8 @@
           <h1
             class="xl:text-3xl lg:text-2xl text-[#1E1E1E] font-bold font-title w-full leading-tight max-lg:mb-4 title"
           >
-            Test psychotechnique : Récupérez votre permis
+            Test psychotechnique : Récupérez 
+            <span class="underline underline-offset-8 decoration-[#BF2A6B]">votre permis</span>
           </h1>
           <h2
             class="text-2xl xl:text-2xl text-[#1E1E1E] font-mono leading-tight xl:mb-4 mb-2"

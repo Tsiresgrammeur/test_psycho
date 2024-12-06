@@ -194,7 +194,7 @@
           />
         </div>
         <div
-          class="flex flex-row items-center justify-center col-span-3 gap-2 max-lg:gap-1 max-lg:px-3"
+          class="flex flex-row items-center justify-center col-span-3 gap-2 max-lg:gap-1 max-lg:px-[3.75rem]"
         >
           <div class="flex flex-col items-center">
             <img
@@ -221,11 +221,11 @@
     </div>
 
     <!-- Bottom Section -->
-    <div class="bg-[#1F2937] text-white py-6 max-lg:pb-0">
+    <div class="bg-[#1F2937] text-white max-lg:py-10 ">
       <div
         class="container mx-auto flex flex-col lg:flex-row justify-between items-center lg:space-y-0 px-4"
       >
-      <div class=" max-lg:w-[64.8%] text-sm max-lg:text-[21px]">
+      <div class=" max-lg:w-[64.8%] text-sm max-lg:text-[21px] leading-loose">
           <a href="#" class="underline underline-dotted text-underline-offset">
             Mentions Légales
           </a>

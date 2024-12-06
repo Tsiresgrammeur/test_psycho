@@ -115,7 +115,7 @@
                     ></div>
                     <!-- Right half (gray) -->
                     <div
-                      class="absolute top-0 right-0 w-1/2 h-full bg-gray-500"
+                      class="absolute top-0 right-0 w-1/2 h-full bg-[#DCDCE6]"
                     ></div>
                     <!-- Star icon -->
                     <i class="fas fa-star text-white text-sm z-10"></i>

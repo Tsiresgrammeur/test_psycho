@@ -18,12 +18,12 @@
       class="flex flex-col items-start justify-center text-center lg:text-left"
     >
           <h1
-            class="xl:text-3xl lg:text-2xl text-3xl font-bold font-title w-full leading-tight max-lg:mb-4 title"
+            class="xl:text-3xl lg:text-2xl text-[#1E1E1E] md:text-xl sm:text-sm text-3xl font-bold font-title w-full leading-tight max-lg:mb-4 title"
           >
             Test psychotechnique : Récupérez votre permis
           </h1>
           <h2
-            class="text-2xl xl:text-2xl ext-[#1E1E1E] font-mono leading-tight mb-4"
+            class="text-2xl xl:text-2xl text-[#1E1E1E] font-mono leading-tight mb-4"
           >
             Une démarche simple & rapide
           </h2>
@@ -31,36 +31,37 @@
         <ul class="space-y-1 mb-6 pl-2 text-left">
           <li class="flex items-center">
             <i class="fa fa-check-circle text-[#08BF26] font-light"></i>
-            <span class="ml-2 font-mono text-lg"
+            <span class="ml-2 font-mono text-lg text-[#1E1E1E]"
               >97.8% de réussite à l'examen psychotechnique</span
             >
           </li>
           <li class="flex items-start">
             <i class="fa fa-check-circle text-[#08BF26] font-light"></i>
-            <span class="ml-2 text-lg"
+            <span class="ml-2 text-lg text-[#1E1E1E]"
               >Recevez vos résultats le jour de votre test</span
             >
           </li>
           <li class="flex items-start">
             <i class="fa fa-check-circle text-[#08BF26] font-light"></i>
-            <span class="ml-2 text-lg">Centre enregistré, psychologues certifiés</span>
+            <span class="ml-2 text-lg text-[#1E1E1E]">Centre enregistré, psychologues certifiés</span>
           </li>
         </ul>
         <div
           class="flex-col flex items-center justify-center text-center lg:w-fit"
         >
           <button
-            class="rounded-md px-4 py-2 bg-accent-500 text-xl font-bold text-white"
+            class="rounded-md px-4 py-2 bg-[#BF2A6B] text-lg font-semibold font-title text-white"
           >
             Je réserve mon test psychotechnique
             <i class="fa fa-angle-right"></i>
           </button>
-          <p class="mt-2 flex text-center">
-            <i class="fa fa-hand-pointer font-light mr-2"></i>Entraînement
-            Gratuit inclus
+          <p class="mt-2 flex items-center text-center">
+            <i class="fa fa-hand-pointer font-light text-[#7E87B4] mr-2"></i><span class="font-mono">Entraînement
+            Gratuit inclus</span>
           </p>
           <div class="flex">
             <p>text 1</p>
+
             <p>text 2</p>
           </div>
         </div>

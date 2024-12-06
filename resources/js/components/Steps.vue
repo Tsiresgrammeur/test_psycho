@@ -32,7 +32,7 @@
         class="lg:flex-1 flex-grow lg:mt-0 items-center justify-center max-lg:px-[13.5rem] text-center lg:text-left"
       >
         <h2
-          class="mb-16 text-[27px] xl:text-3xl font-title font-bold text-accent-500"
+          class="mb-16 text-[27px] xl:text-3xl font-title font-bold text-[#BF2A6B]"
         >
           Votre test psychotechnique en 3 étapes :
         </h2>
@@ -40,12 +40,12 @@
           class="relative lg:space-y-10 space-y-5 text-gray-700 justify-center items-center"
         >
           <div
-            class="absolute left-[30px] top-0 h-[95%] w-[2px] bg-accent-500"
+            class="absolute left-[30px] top-0 h-[95%] w-[2px] bg-[#BF2A6B]"
           ></div>
 
           <li class="relative flex items-start">
             <span
-              class="ml-3 flex font-bold font-title items-center justify-center w-12 h-12 bg-white text-accent-500 rounded-full text-xl shadow-lg z-10"
+              class="ml-3 flex font-bold font-title items-center justify-center w-12 h-12 bg-white text-[#BF2A6B] rounded-full text-xl shadow-lg z-10"
             >
               1
             </span>
@@ -59,7 +59,7 @@
 
           <li class="relative flex items-start mr-9">
             <span
-              class="ml-3 flex font-bold font-title items-center justify-center w-12 h-12 bg-white text-accent-500 rounded-full text-xl shadow-lg z-10"
+              class="ml-3 flex font-bold font-title items-center justify-center w-12 h-12 bg-white text-[#BF2A6B] rounded-full text-xl shadow-lg z-10"
             >
               2
             </span>
@@ -74,7 +74,7 @@
 
           <li class="relative flex items-start">
             <span
-              class="ml-3 flex font-bold font-title items-center justify-center w-12 h-12 bg-white text-accent-500 rounded-full text-xl shadow-lg z-10"
+              class="ml-3 flex font-bold font-title items-center justify-center w-12 h-12 bg-white text-[#BF2A6B] rounded-full text-xl shadow-lg z-10"
             >
               3
             </span>
@@ -89,7 +89,7 @@
         <!-- <div class="bar"></div> -->
         <div class="my-8">
           <button
-            class="rounded-md px-4 py-2 bg-accent-500 text-xl font-bold text-white"
+            class="rounded-md px-4 py-2 bg-[#BF2A6B] text-xl font-bold text-white"
           >
             Je réserve mon test psychotechnique
             <i class="fa fa-angle-right"></i>
@@ -102,7 +102,7 @@
   <div class="max-lg:mb-32">
     <div class="text-center lg:text-left items-center lg:items-start w-full max-lg:px-52">
       <h2
-        class="mb-10 text-[27px] max-lg:text-[32px] xl:text-3xl font-title font-bold text-accent-500"
+        class="mb-10 text-[27px] max-lg:text-[32px] xl:text-3xl font-title font-bold text-[#BF2A6B]"
       >
         Votre entraînement Gratuit inclus
       </h2>
@@ -127,7 +127,7 @@
 
       </div>
           <button
-            class="rounded-md px-4 py-2 bg-accent-500 text-xl font-bold text-white"
+            class="rounded-md px-4 py-2 bg-[#BF2A6B] text-xl font-bold text-white"
           >
             Je réserve mon test psychotechnique
             <i class="fa fa-angle-right"></i>

@@ -2,7 +2,7 @@
   <div class="px-10 xl:px-16 py-8 w-full bg-gray-50">
     <!-- Title Section -->
     <div class="mb-8 text-center lg:text-left">
-      <h2 class="max-lg:text-[32px] text-2xl xl:text-3xl font-bold text-accent-500">
+      <h2 class="max-lg:text-[32px] text-2xl xl:text-3xl font-bold text-[#BF2A6B]">
         Ce qu'en pensent nos candidats
       </h2>
     </div>

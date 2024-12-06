@@ -20,7 +20,8 @@
           <h1
             class="xl:text-3xl lg:text-2xl text-[#1E1E1E] font-bold font-title w-full leading-tight max-lg:mb-4 title"
           >
-            Test psychotechnique : Récupérez votre permis
+            Test psychotechnique : Récupérez 
+            <span class="underline underline-offset-8 decoration-[#BF2A6B]">votre permis</span>
           </h1>
           <h2
             class="text-2xl xl:text-2xl text-[#1E1E1E] font-mono leading-tight xl:mb-4 mb-2"

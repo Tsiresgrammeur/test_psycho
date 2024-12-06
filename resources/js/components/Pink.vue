@@ -14,7 +14,7 @@
     <div class="flex flex-col items-center">
       <div class="text-4xl mb-4">
         <!-- Icon -->
-        <i class="fa fa-hand-pointer"></i>
+        <i class="fas fa-hand-pointer"></i>
       </div>
       <p class="font-mono xl:text-[17px] text-[15px] max-lg:text-xl">Entraînement en ligne <br/> pour garantir votre réussite</p>
     </div>

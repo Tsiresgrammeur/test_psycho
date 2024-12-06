@@ -17,11 +17,11 @@
       >
         <p class="text-xl font-bold">Excellent</p>
         <div class="flex items-center text-yellow-500 mb-2">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
         </div>
         <p class="text-base">
           Based on <span class="font-semibold">414 reviews</span>
@@ -35,7 +35,7 @@
 
       <div class="flex justify-center items-center">
         <i
-          class="fa fa-angle-left text-xl text-[#CBCBCB] cursor-pointer"
+          class="fas fa-angle-left text-xl text-[#CBCBCB] cursor-pointer"
           @click="prev"
         ></i>
       </div>
@@ -61,7 +61,7 @@
       </div>
     </div>
     <div class="text-yellow-500 mb-2">
-      <i class="fa fa-star" v-for="n in review.rating" :key="n"></i>
+      <i class="fas fa-star" v-for="n in review.rating" :key="n"></i>
     </div>
     <p class="xl:text-base lg:text-[0.8rem] max-lg:text-[23px] leading-tight max-lg:leading-normal">
       {{ review.text }}
@@ -74,7 +74,7 @@
 
 <div class="flex justify-center items-center">
   <i
-    class="fa fa-angle-right text-xl text-[#CBCBCB] cursor-pointer"
+    class="fas fa-angle-right text-xl text-[#CBCBCB] cursor-pointer"
     @click="next"
   ></i>
 </div>

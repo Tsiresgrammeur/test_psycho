@@ -19,8 +19,8 @@
       >
         <!-- Location Input -->
         <div class="flex items-center gap-2">
-          <div class="bg-gray-100 p-3 rounded-full">
-            <i class="fas fa-map-marker-alt text-blue-500 text-lg"></i>
+          <div class=" p-3 rounded-full">
+            <i class="fas fa-map-marker-alt text-[#7A7878] text-lg"></i>
           </div>
           <input
             type="text"
@@ -30,11 +30,14 @@
           />
         </div>
         <!-- Search Button -->
+        <div class="flex flex-row justify-end">
+        <i class="fas text-2xl fa-location-arrow mt-2 text-[#7A7878] mr-4"></i>
         <button
           class="bg-[#36578A] rounded-[38px] text-white px-6 py-3 shadow-md hover:bg-blue-600 flex items-center"
         >
           Rechercher
         </button>
+        </div>
       </div>
 
       <!-- Filters Section -->
@@ -240,9 +243,9 @@
             </h3>
 
             <!-- Buttons Section -->
-            <div class="flex flex-row w-3/4 pl-4 gap-4 mb-4">
+            <div class="flex flex-row gap-y-2 max-lg:mx-[5.5rem] lg:w-3/4 lg:pl-4 lg:gap-4 lg:mb-4">
               <button
-                class="bg-[#F8F9FB] font-mono shadow-md text-sm w-[70%] px-4 py-2 rounded-md"
+                class="bg-[#F8F9FB] font-mono shadow-md max-lg:mx-5 text-sm w-[70%] px-4 py-2 rounded-md"
               >
                 Château-Thierry
               </button>

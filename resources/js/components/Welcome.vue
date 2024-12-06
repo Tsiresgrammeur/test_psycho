@@ -1,7 +1,7 @@
 <template>
-  <div class="homepage px-16 md:p-4 py-20">
+  <div class="homepage px-16 md:p-4 shadow-md rounded-md relative bg-[#F8F9FB] z-0  py-20">
     <div
-      class="logo-desktop flex xl:px-16 px-10 flex-col items-center lg:items-start justify-center text-center w-full"
+      class="logo-desktop flex xl:px-16 max-lg:shadow-md flex-col items-center lg:items-start justify-center text-center w-full"
     >
       <img
         src="centre_national.png"
@@ -149,7 +149,7 @@
     <div class="flex max-lg:hidden flex-row w-fit xl:ml-[7.3rem] lg:ml-[6rem]">
       <div class="flex w-2/3 justify-between">
         <div
-          class="flex flex-col items-center justify-center text-center ml-2 border-gray-200"
+          class="flex flex-col items-center justify-center text-center ml-2 z-19 border-gray-200"
         >
           <img
             src="https://fakeimg.pl/20x20/?text=Google&font=lobster"
@@ -273,13 +273,10 @@ export default {};
     z-index: -1;
     transform: translate(-71%, -44%) rotate(71deg);
   }
-<<<<<<< HEAD
-=======
 
   .homepage {
     border: 0;
   }
->>>>>>> 28375bb (fix pixel)
 }
 
 @media (max-width: 650px) {
@@ -314,7 +311,7 @@ export default {};
     border-bottom-right-radius: 50%;
     top: 42%;
     left: 69%;
-    z-index: -1;
+    z-index: 0;
     transform: translate(-71%, -44%) rotate(71deg);
   }
 }

@@ -143,32 +143,111 @@
         </h3>
       </div>
     </div>
+    <div class="py-8">
+    <!-- Conteneur des images en colonne -->
+    <div class="flex flex-row justify-center items-center gap-6">
+      <!-- Image et légende pour chaque élément -->
+      <div class="flex flex-col items-center">
+        <img
+          src="https://fakeimg.pl/200x100/?text=Logo1&font=lobster"
+          alt="Logo 1"
+          class="w-40 h-auto"
+        />
+      </div>
+      <div class="flex flex-col items-center">
+        <img
+          src="https://fakeimg.pl/200x100/?text=Logo2&font=lobster"
+          alt="Logo 2"
+          class="w-40 h-auto"
+        />
+      </div>
+      <div class="flex flex-col items-center">
+        <img
+          src="https://fakeimg.pl/200x100/?text=Logo3&font=lobster"
+          alt="Logo 3"
+          class="w-40 h-auto"
+        />
+      </div>
+      <div class="flex flex-col items-center">
+        <img
+          src="https://fakeimg.pl/200x100/?text=Logo4&font=lobster"
+          alt="Logo 4"
+          class="w-40 h-auto"
+        />
+      </div>
+      <div class="flex flex-col items-center">
+        <img
+          src="https://fakeimg.pl/200x100/?text=Logo5&font=lobster"
+          alt="Logo 5"
+          class="w-40 h-auto"
+        />
+      </div>
+    </div>
+
+    <!-- Texte explicatif sous les images -->
+    <p class="text-center text-xs text-gray-500 mt-6">
+      * Liens externes menant sur des sites gouvernementaux non-affiliés à
+      AAAEP.
+    </p>
+  </div>
+
+
 
     <!-- Bottom Section -->
     <div class="bg-[#1F2937] text-white py-6">
       <div
-        class="container mx-auto flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0 px-4"
+        class="container mx-auto flex flex-col lg:flex-row justify-between items-center lg:space-y-0 px-4"
       >
-        <p class="text-sm">
-          Mentions Légales - CGV - Données Personnelles - Offre de Remboursement
-          - Plateforme de Règlement en Ligne
-        </p>
-        <div class="flex space-x-4">
-          <a href="#" class="hover:text-gray-300">
+    <div class="flex justify-center items-center gap-2 text-white">
+      <a
+        href="#"
+        class="underline underline-dotted text-underline-offset"
+      >
+        Mentions Légales
+      </a>
+      <span class="text-gray-400">-</span>
+      <a
+        href="#"
+        class="underline underline-dotted text-underline-offset"
+      >
+        CGV
+      </a>
+      <span class="text-gray-400">-</span>
+      <a
+        href="#"
+        class="underline underline-dotted text-underline-offset"
+      >
+        Données Personnelles
+      </a>
+      <span class="text-gray-400">-</span>
+      <a
+        href="#"
+        class="underline underline-dotted text-underline-offset"
+      >
+        Offre de Remboursement
+      </a>
+      <span class="text-gray-400">-</span>
+      <a
+        href="#"
+        class="underline underline-dotted text-underline-offset"
+      >
+        Plateforme de Règlement en Ligne des Litiges (contact[at]aaaep.fr)
+      </a>
+    </div>
+    <div class="flex space-x-4 text-gray-500">
+          <a href="#" class="text-white">
             <i class="fab fa-facebook"></i>
           </a>
-          <a href="#" class="hover:text-gray-300">
+          <a href="#" class="text-white">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="#" class="hover:text-gray-300">
+          <a href="#" class="text-white">
             <i class="fab fa-twitter"></i>
           </a>
-
-          <a href="#" class="hover:text-gray-300">
+          <a href="#" class="text-white">
             <i class="fab fa-youtube"></i>
           </a>
-
-          <a href="#" class="hover:text-gray-300">
+          <a href="#" class="text-white">
             <i class="fab fa-linkedin"></i>
           </a>
         </div>
@@ -200,5 +279,14 @@ export default {
   font-family: Nunito;
   left: 0;
   color: gray;
+}
+
+.text-underline-offset {
+     text-underline-offset: 6px; /* Décalage de 3px entre le texte et la ligne */
+}
+
+.underline-dotted {
+  text-decoration: underline;
+  text-decoration-style: dotted;
 }
 </style>

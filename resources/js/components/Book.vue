@@ -172,7 +172,7 @@
                   {{ result.address }}
                 </div>
               </div>
-              <div class="mr-4">
+              <div class="mr-4 lg:border-l-[4px] xl:pl-14 lg:pl-12 ">
                 <div
                   class="text-right flex justify-end flex-row items-end gap-1"
                 >
@@ -209,7 +209,7 @@
                   >
                 </div>
               </div>
-              <div class="flex flex-col max-lg:mr-4 max-lg:mb-4">
+              <div class="flex flex-col max-lg:mr-4 lg:border-l-[4px] lg:pl-6 xl:pl-8 border-[#E4E4E4] max-lg:mb-4">
                 <button
                   class="bg-[#BF2A6B] text-white px-8 py-2 rounded-md font-mono hover:bg-pink-600 text-center flex items-center"
                 >
@@ -243,14 +243,14 @@
             </h3>
 
             <!-- Buttons Section -->
-            <div class="flex flex-row gap-y-2 max-lg:mx-[5.5rem] lg:w-3/4 lg:pl-4 lg:gap-4 lg:mb-4">
+            <div class="flex flex-row gap-y-2 max-lg:mx-[5.5rem] max-lg:py-6  xl:w-3/4 lg:w-[96%] lg:pl-4 lg:gap-4 lg:mb-4">
               <button
-                class="bg-[#F8F9FB] font-mono shadow-md max-lg:mx-5 text-sm w-[70%] px-4 py-2 rounded-md"
+                class="bg-[#F8F9FB] font-mono shadow-md max-lg:mx-5 max-lg:text-sm lg:text-[0.8rem] xl:text-sm w-[70%] px-4 py-2 rounded-md"
               >
                 Château-Thierry
               </button>
               <button
-                class="bg-[#F8F9FB] font-mono shadow-md text-sm w-[70%] px-4 py-2 rounded-md"
+                class="bg-[#F8F9FB] font-mono shadow-md max-lg:mx-5 max-lg:text-sm lg:text-[0.8rem] xl:text-sm w-[70%] px-4 py-2 rounded-md"
               >
                 Saint-Quentin
               </button>

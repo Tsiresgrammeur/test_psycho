@@ -16,7 +16,7 @@
             <!-- User Image (circular overlay) -->
           </div>
           <div
-            class="absolute top-16 xl:right-8 lg:right-0 max-lg:-left-12 h-24 w-56 lg:w-48 lg:h-32 bg-white rounded-full shadow-2xl flex items-center justify-center"
+            class="absolute top-16 xl:right-1 lg:right-0 max-lg:-left-12 h-24 w-56 lg:w-48 lg:h-32 bg-white rounded-full shadow-2xl flex items-center justify-center"
           >
             <img
               src="https://fakeimg.pl/297x297/?text=User&font=lobster"

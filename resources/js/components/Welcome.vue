@@ -18,12 +18,12 @@
           class="flex flex-col items-start justify-center text-center lg:text-left"
         >
           <h1
-            class="xl:text-3xl lg:text-2xl text-[#1E1E1E] md:text-xl sm:text-sm text-3xl font-bold font-title w-full leading-tight max-lg:mb-4 title"
+            class="xl:text-3xl lg:text-2xl text-[#1E1E1E] font-bold font-title w-full leading-tight max-lg:mb-4 title"
           >
             Test psychotechnique : Récupérez votre permis
           </h1>
           <h2
-            class="text-xl xl:text-2xl text-[#1E1E1E] font-mono leading-tight xl:mb-4 lg:mb-2"
+            class="text-2xl xl:text-2xl text-[#1E1E1E] font-mono leading-tight xl:mb-4 mb-2"
           >
             Une démarche simple & rapide
           </h2>
@@ -62,6 +62,68 @@
             ><span class="font-mono">Entraînement Gratuit inclus</span>
           </p>
           <div class="lg:hidden">
+            <div class="flex flex-row w-fit xl:ml-[7.3rem] ml-[2rem] lg:ml-[6rem]">
+      <div class="flex w-2/3 justify-between">
+        <div
+          class="flex flex-col items-center justify-center text-center ml-2 border-gray-200"
+        >
+          <img
+            src="https://fakeimg.pl/20x20/?text=Google&font=lobster"
+            alt="Google Logo"
+            class="mt-2"
+          />
+          <div class="flex items-center text-yellow-500 mb-2">
+            <i class="fas fa-star text-base" v-for="n in 5" :key="n"></i>
+          </div>
+          <p class="text-xs">
+            <span class="font-semibold">4.7 | 8.085 </span>avis
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col items-start justify-center text-left ml-7 max-lg: mt-1 border-gray-200"
+        >
+          <div class="flex items-start text-left">
+            <div class="flex flex-row text-left">
+              <i class="fas fa-star text-xs text-[#00B67A]"></i>
+              <span class="text-xs font-medium">Trustpilot</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-row justify-center">
+              <!-- First section: v-for loop for stars -->
+              <div
+                class="flex flex-row justify-center mx-[1px] py-[0.125rem] px-1 items-center star-container"
+                v-for="n in 4"
+                :key="n"
+              >
+                <i class="fas fa-star text-white text-sm"></i>
+              </div>
+
+              <!-- Second section: Half-colored background with a star -->
+              <div
+                class="relative flex justify-center items-center py-[0.125rem] px-1 w-full"
+              >
+                <!-- Left half (green) -->
+                <div
+                  class="absolute top-0 left-0 w-1/2 h-full mx-[1px] bg-[#00b67a]"
+                ></div>
+                <!-- Right half (gray) -->
+                <div
+                  class="absolute top-0 right-0 w-1/2 h-full bg-[#DCDCE6]"
+                ></div>
+                <!-- Star icon -->
+                <i class="fas fa-star text-white text-sm z-10"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-xs">
+            <span>Truescore</span>
+            <span class="font-semibold">4.7 | 8.085 </span>avis
+          </p>
+        </div>
+      </div>
+    </div>
           </div>
         </div>
       </div>
@@ -91,7 +153,7 @@
         >
           <img
             src="https://fakeimg.pl/20x20/?text=Google&font=lobster"
-            alt="G#00B67Aoogle Logo"
+            alt="Google Logo"
             class="mt-2"
           />
           <div class="flex items-center text-yellow-500 mb-2">
@@ -180,6 +242,20 @@ export default {};
 
 .logo-mobile {
   display: none;
+}
+
+@media (max-width: 1023px) {
+.title{
+  top: 97px;
+  left: 40px;
+  width: 331px;
+  height: 64px;
+  text-align: left;
+  font: normal normal bold 26px/32px Lato;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
 }
 
 @media only screen and (max-width: 1024px) {

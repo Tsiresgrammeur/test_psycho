@@ -23,13 +23,13 @@
             Test psychotechnique : Récupérez votre permis
           </h1>
           <h2
-            class="text-2xl xl:text-2xl ext-[#1E1E1E] font-mono leading-tight mb-6"
+            class="text-2xl xl:text-2xl ext-[#1E1E1E] font-mono leading-tight mb-4"
           >
             Une démarche simple & rapide
           </h2>
         </div>
-        <ul class="space-y-2 mb-6 pl-2 text-left">
-          <li class="flex items-start">
+        <ul class="space-y-1 mb-6 pl-2 text-left">
+          <li class="flex items-center">
             <i class="fa fa-check-circle text-[#08BF26] font-light"></i>
             <span class="ml-2 font-mono text-lg"
               >97.8% de réussite à l'examen psychotechnique</span

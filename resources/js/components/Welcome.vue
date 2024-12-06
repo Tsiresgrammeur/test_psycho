@@ -18,7 +18,7 @@
       class="flex flex-col items-start justify-center text-center lg:text-left"
     >
           <h1
-            class="xl:text-3xl lg:text-2xl text-3xl font-bold font-title w-full leading-tight mb-4 title"
+            class="xl:text-3xl lg:text-2xl text-3xl font-bold font-title w-full leading-tight max-lg:mb-4 title"
           >
             Test psychotechnique : Récupérez votre permis
           </h1>
@@ -66,8 +66,8 @@
         </div>
       </div>
       <!-- Video Section -->
-      <div class="flex-shrink-0 w-100">
-        <div class="hero-video relative pb-[56.25%] h-0">
+      <div class="flex-shrink-0 w-2/5">
+        <div class="relative pb-[56.25%] h-0">
           <iframe
             class="absolute top-0 left-0 w-full h-full"
             src="https://www.youtube.com/embed/zmjPmzJFEFA"
@@ -108,10 +108,10 @@ export default {};
     transform: translate(-42%, -58%) rotate(-23deg);
 }
 
-.hero-video{
+/* .hero-video{
   width: 500px;
   height: 200px;
-}
+} */
 
 
 @media only screen and (max-width: 1024px)  {

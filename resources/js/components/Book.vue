@@ -28,7 +28,7 @@
         <button
           class="bg-[#36578A] rounded-[38px] text-white px-6 py-3 shadow-md hover:bg-blue-600 flex items-center"
         >
-          <i class="fa fa-angle-right text-base font-semibold"></i>
+          <i class="fas fa-angle-right text-base font-semibold"></i>
           Rechercher
         </button>
       </div>
@@ -118,9 +118,15 @@
 
             <!-- Bottom Section: Warning and Button -->
             <div class="flex justify-between items-center mt-4">
-              <p class="text-sm text-red-500 flex items-center">
-                ⚠️ Dernière place à cette date
+              <div class="flex flex-row">
+              <p class="pr-3">
+                {{result.street}}
               </p>
+
+              <div class="text-sm text-[#B90909] flex flex-row items-center justify-center">
+                ️<i class="fa-solid fa-triangle-exclamation"></i> <span class="pt-[0.225rem] pl-1 font-mono">Dernière place à cette date</span>
+              </div>
+              </div>
               <button
                 class="bg-[#BF2A6B] text-white px-4 py-2 rounded-md font-mono hover:bg-pink-600 text-center flex items-center"
               >
@@ -166,6 +172,7 @@ export default {
           address: "50 avenue d'Essômes, 02400 Château-Thierry",
           price: "77",
           originalPrice: "120",
+          street: "02 Château-Thierry"
         },
         {
           day: "Lundi",
@@ -173,6 +180,56 @@ export default {
           address: "50 avenue d'Essômes, 02400 Château-Thierry",
           price: "77",
           originalPrice: "120",
+          street: "02 Château-Thierry"
+        },
+        {
+          day: "Lundi",
+          date: "04 Novembre 2024",
+          address: "50 avenue d'Essômes, 02400 Château-Thierry",
+          price: "77",
+          originalPrice: "120",
+          street: "02 Château-Thierry"
+        },
+        {
+          day: "Lundi",
+          date: "04 Novembre 2024",
+          address: "50 avenue d'Essômes, 02400 Château-Thierry",
+          price: "77",
+          originalPrice: "120",
+          street: "02 Château-Thierry"
+        },
+
+        {
+          day: "Lundi",
+          date: "04 Novembre 2024",
+          address: "50 avenue d'Essômes, 02400 Château-Thierry",
+          price: "77",
+          originalPrice: "120",
+          street: "02 Château-Thierry"
+        },
+        {
+          day: "Lundi",
+          date: "04 Novembre 2024",
+          address: "50 avenue d'Essômes, 02400 Château-Thierry",
+          price: "77",
+          originalPrice: "120",
+          street: "02 Château-Thierry"
+        },
+        {
+          day: "Lundi",
+          date: "04 Novembre 2024",
+          address: "50 avenue d'Essômes, 02400 Château-Thierry",
+          price: "77",
+          originalPrice: "120",
+          street: "02 Château-Thierry"
+        },
+        {
+          day: "Lundi",
+          date: "04 Novembre 2024",
+          address: "50 avenue d'Essômes, 02400 Château-Thierry",
+          price: "77",
+          originalPrice: "120",
+          street: "02 Château-Thierry"
         },
       ],
     };

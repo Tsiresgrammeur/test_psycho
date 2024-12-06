@@ -37,19 +37,19 @@
         </div>
         <ul class="space-y-1 mb-6 pl-2 text-left">
           <li class="flex items-center">
-            <i class="fa fa-check-circle text-[#08BF26] font-light"></i>
+            <i class="fas fa-check-circle text-[#08BF26] font-light"></i>
             <span class="ml-2 font-mono text-lg text-[#1E1E1E]"
               >97.8% de réussite à l'examen psychotechnique</span
             >
           </li>
-          <li class="flex items-start">
-            <i class="fa fa-check-circle text-[#08BF26] font-light"></i>
+          <li class="flex items-center">
+            <i class="fas fa-check-circle text-[#08BF26] font-light"></i>
             <span class="ml-2 text-lg text-[#1E1E1E]"
               >Recevez vos résultats le jour de votre test</span
             >
           </li>
-          <li class="flex items-start">
-            <i class="fa fa-check-circle text-[#08BF26] font-light"></i>
+          <li class="flex items-center">
+            <i class="fas fa-check-circle text-[#08BF26] font-light"></i>
             <span class="ml-2 text-lg text-[#1E1E1E]"
               >Centre enregistré, psychologues certifiés</span
             >
@@ -62,10 +62,10 @@
             class="rounded-md px-4 py-2 bg-[#BF2A6B] text-lg font-semibold font-title text-white"
           >
             Je réserve mon test psychotechnique
-            <i class="fa fa-angle-right text-base font-semibold"></i>
+            <i class="fas fa-angle-right text-base font-semibold"></i>
           </button>
           <p class="mt-2 flex items-center text-center">
-            <i class="fa fa-hand-pointer font-light text-[#7E87B4] mr-2"></i
+            <i class="fas fa-hand-pointer font-light text-[#7E87B4] mr-2"></i
             ><span class="font-mono">Entraînement Gratuit inclus</span>
           </p>
           <div class="flex w-2/3 justify-between">
@@ -78,7 +78,7 @@
                 class="mt-2"
               />
               <div class="flex items-center text-yellow-500 mb-2">
-                <i class="fa fa-star text-base" v-for="n in 5" :key="n"></i>
+                <i class="fas fa-star text-base" v-for="n in 5" :key="n"></i>
               </div>
               <p class="text-xs">
                 <span class="font-semibold">4.7 | 8.085 </span>avis
@@ -90,7 +90,7 @@
             >
             <div class="flex items-start text-left">
               <div class="flex flex-row text-left">
-                <i class="fa fa-star text-xs text-[#00B67A]"></i>
+                <i class="fas fa-star text-xs text-[#00B67A]"></i>
                 <span class="text-xs font-medium">Trustpilot</span>
               </div>
             </div>
@@ -102,7 +102,7 @@
                     v-for="n in 4"
                     :key="n"
                   >
-                    <i class="fa fa-star text-white text-sm"></i>
+                    <i class="fas fa-star text-white text-sm"></i>
                   </div>
 
                   <!-- Second section: Half-colored background with a star -->
@@ -118,7 +118,7 @@
                       class="absolute top-0 right-0 w-1/2 h-full bg-gray-500"
                     ></div>
                     <!-- Star icon -->
-                    <i class="fa fa-star text-white text-sm z-10"></i>
+                    <i class="fas fa-star text-white text-sm z-10"></i>
                   </div>
                 </div>
               </div>

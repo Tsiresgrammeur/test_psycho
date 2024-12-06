@@ -22,7 +22,7 @@
               <div class="font-body max-lg:text-[28px] lg:text-[1.05rem] xl:text-[1.125rem]">{{ item.question }}</div>
               <div>
                 <i
-                  :class="activeSection === index ? 'fa fa-minus' : 'fa fa-plus'"
+                  :class="activeSection === index ? 'fas fa-minus' : 'fas fa-plus'"
                   class="text-gray-500"
                 ></i>
               </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-100 max-lg:px-28 py-10 px-10 xl:px-16">
     <div class="max-w-7xl mx-auto space-y-6">
-      <div class="mb-8 text-left ">
+      <div class="mb-8 text-left">
         <h2
           class="max-lg:text-[32px] text-2xl xl:text-3xl text-title font-semibold text-[#BF2A6B]"
         >
@@ -39,12 +39,36 @@
 
       <!-- Filters Section -->
       <div class="lg:hidden w-full">
-        <button class="rounded-md shadow-md w-full text-4xl bg-[#E9E9E9] font-mono">
+        <button
+          class="rounded-md shadow-md w-full text-4xl bg-[#E9E9E9] font-mono"
+        >
           Filtrer
         </button>
-
       </div>
-      <div class=" max-lg:hidden bg-[#E9E9E9] shadow-md p-6 pl-32 pr-0 pb-0 rounded-md">
+      <div class="lg:hidden">
+        <div class="flex rounded-lg shadow-md border bg-white divide-x">
+          <!-- Bloc "Le plus rapide" -->
+          <div
+            class="p-4 bg-[#36578A] font-mono text-white text-center rounded-l-lg flex-1"
+          >
+            <div class="font-medium">Le plus rapide</div>
+            <div class="text-2xl">120€</div>
+          </div>
+          <!-- Bloc "Le moins cher" -->
+          <div class="p-4 text-center flex-1">
+            <div class="font-medium">Le moins cher</div>
+            <div class="text-2xl">77€</div>
+          </div>
+          <!-- Bloc "Fort demandé" -->
+          <div class="p-4 text-center flex-1">
+            <div class="font-medium">Fort demandé</div>
+            <div class="text-2xl">77€</div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-lg:hidden bg-[#E9E9E9] shadow-md p-6 pl-32 pr-0 pb-0 rounded-md"
+      >
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
           <select
             class="form-select bg-[#E9E9E9] border-t border-b border-black p-2 w-[80%] h-fit text-gray-600"
@@ -125,11 +149,15 @@
             <!-- Top Section: Date and Address -->
             <div class="flex justify-between">
               <div class="flex flex-col lg:flex-row">
-                <p class="xl:text-lg lg:text-[0.95rem] lg:w-fit pb-[0.125rem] max-lg:hidden">
+                <p
+                  class="xl:text-lg lg:text-[0.95rem] lg:w-fit pb-[0.125rem] max-lg:hidden"
+                >
                   {{ result.day }} <br />{{ result.date }}
                 </p>
 
-                <p class="xl:text-lg ml-[1.125rem] lg:text-[0.95rem] lg:w-fit pb-[0.125rem] lg:hidden">
+                <p
+                  class="xl:text-lg ml-[1.125rem] lg:text-[0.95rem] lg:w-fit pb-[0.125rem] lg:hidden"
+                >
                   {{ result.day }} {{ result.date }}
                 </p>
                 <div
@@ -163,7 +191,9 @@
             <!-- Bottom Section: Warning and Button -->
             <div class="flex justify-between items-center">
               <div class="flex flex-col lg:flex-row">
-                <p class="pr-3  xl:text-lg bg-[#F8F9FB] p-1 rounded-md lg:text-[0.95re] text-[#BF2A6B] max-lg:ml-[1.125rem]">
+                <p
+                  class="pr-3 xl:text-lg bg-[#F8F9FB] p-1 rounded-md lg:text-[0.95re] text-[#BF2A6B] max-lg:ml-[1.125rem]"
+                >
                   {{ result.street }}
                 </p>
 
@@ -177,16 +207,26 @@
                 </div>
               </div>
               <div class="flex flex-col max-lg:mr-4 max-lg:mb-4">
-              <button
-                class="bg-[#BF2A6B] text-white px-8 py-2 rounded-md font-mono hover:bg-pink-600 text-center flex items-center"
-              >
-                RÉSERVER<i class="fas fa-angle-right ml-2"></i>
-              </button>
-              
-                  <p class="text-xs text-center font-mono">3 places disponible à cette date</p>
-</div>
+                <button
+                  class="bg-[#BF2A6B] text-white px-8 py-2 rounded-md font-mono hover:bg-pink-600 text-center flex items-center"
+                >
+                  RÉSERVER<i class="fas fa-angle-right ml-2"></i>
+                </button>
+
+                <p class="text-xs text-center font-mono">
+                  3 places disponible à cette date
+                </p>
+              </div>
             </div>
           </div>
+        </div>
+
+        <div class="lg:hidden w-full flex justify-center items-center">
+          <button
+            class="bg-[#36578A] rounded-md w-1/5 my-10 p-2 text-white text-2xl font-mono"
+          >
+            Voir plus
+          </button>
         </div>
 
         <!-- Right Section with relative positioning -->
@@ -273,32 +313,25 @@
                 </div>
                 <div>
                   <div class="flex flex-row justify-center">
-                    <!-- First section: v-for loop for stars -->
-                    <div
-                      class="flex flex-row justify-center mx-[1px] py-[0.25rem] px-1 lg:px-[0.125rem] bg-[#00B67A] items-center star-container"
-                      v-for="n in 4"
-                      :key="n"
-                    >
-                      <i
-                        class="fas fa-star text-white xl:text-sm lg:text-xs"
-                      ></i>
-                    </div>
+                     <div
+                    class="flex flex-row justify-center mx-[1px] py-[0.125rem] px-1 bg-[#00b67a]  items-center star-container"
+                    v-for="n in 4"
+                    :key="n"
+                  >
+                    <i class="fas fa-star text-white xl:text-sm lg:text-xs z-10"></i>
+                  </div>
 
-                    <!-- Second section: Half-colored background with a star -->
+                  <div
+                    class="relative flex justify-center items-center py-[0.125rem] px-1 w-full"
+                  >
                     <div
-                      class="relative flex justify-center items-center py-[0.25rem] px-1 lg:px-[0.125rem] w-full"
-                    >
-                      <!-- Left half (green) -->
-                      <div
-                        class="absolute top-0 left-0 w-1/2 h-full mx-[1px] bg-[#00b67a]"
-                      ></div>
-                      <!-- Right half (gray) -->
-                      <div
-                        class="absolute top-0 right-0 w-1/2 h-full bg-[#DCDCE6]"
-                      ></div>
-                      <!-- Star icon -->
-                      <i class="fas fa-star text-white xl:text-sm lg:text-xs z-10"></i>
-                    </div>
+                      class="absolute top-0 left-0 w-1/2 h-full mx-[1px] bg-[#00b67a]"
+                    ></div>
+                    <div
+                      class="absolute top-0 right-0 w-1/2 h-full bg-[#DCDCE6]"
+                    ></div>
+                    <i class="fas fa-star text-white xl:text-sm lg:text-xs z-10"></i>
+                  </div>
                   </div>
                 </div>
                 <p class="text-xs">

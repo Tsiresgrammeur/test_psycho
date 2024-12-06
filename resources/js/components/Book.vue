@@ -1,12 +1,17 @@
 <template>
-  <div class="min-h-screen bg-gray-100 px-10 xl:px-16">
+  <div class="min-h-screen bg-gray-100 max-lg:px-28 py-10 px-10 xl:px-16">
     <div class="max-w-7xl mx-auto space-y-6">
-      <div class="mb-8 text-center lg:text-left">
+      <div class="mb-8 text-left ">
         <h2
-          class="max-lg:text-[32px] text-2xl xl:text-3xl text-title font-bold text-[#BF2A6B]"
+          class="max-lg:text-[32px] text-2xl xl:text-3xl text-title font-semibold text-[#BF2A6B]"
         >
           Réservez votre test proche de chez vous
         </h2>
+        <h3
+          class="max-lg:text-[22px] text-2xl xl:text-2xl text-title text-[#BF2A6B]"
+        >
+          En seulement 3 étapes
+        </h3>
       </div>
       <!-- Search Section -->
       <div
@@ -33,7 +38,13 @@
       </div>
 
       <!-- Filters Section -->
-      <div class="bg-[#E9E9E9] shadow-md p-6 pl-32 pr-0 pb-0 rounded-md">
+      <div class="lg:hidden w-full">
+        <button class="rounded-md shadow-md w-full text-4xl bg-[#E9E9E9] font-mono">
+          Filtrer
+        </button>
+
+      </div>
+      <div class=" max-lg:hidden bg-[#E9E9E9] shadow-md p-6 pl-32 pr-0 pb-0 rounded-md">
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
           <select
             class="form-select bg-[#E9E9E9] border-t border-b border-black p-2 w-[80%] h-fit text-gray-600"
@@ -88,7 +99,7 @@
       </div>
 
       <!-- Loading Section -->
-      <div>
+      <div class="max-lg:hidden">
         <div class="flex items-center gap-2">
           <div
             class="animate-spin rounded-full h-4 w-4 border-b-2 border-[#36578A]"
@@ -113,9 +124,13 @@
           >
             <!-- Top Section: Date and Address -->
             <div class="flex justify-between">
-              <div class="flex flex-row">
-                <p class="xl:text-lg lg:text-[0.95rem] lg:w-fit pb-[0.125rem]">
+              <div class="flex flex-col lg:flex-row">
+                <p class="xl:text-lg lg:text-[0.95rem] lg:w-fit pb-[0.125rem] max-lg:hidden">
                   {{ result.day }} <br />{{ result.date }}
+                </p>
+
+                <p class="xl:text-lg ml-[1.125rem] lg:text-[0.95rem] lg:w-fit pb-[0.125rem] lg:hidden">
+                  {{ result.day }} {{ result.date }}
                 </p>
                 <div
                   class="xl:text-lg lg:text-[0.95rem] ml-4 font-mono xl:pb-1 pb-2 flex flex-row items-end w-fit"
@@ -140,20 +155,20 @@
                   </p>
                 </div>
                 <div class="mr-4">
-                  <p class="text-xs">Après remboursement</p>
+                  <p class="text-xs font-mono">Après remboursement</p>
                 </div>
               </div>
             </div>
 
             <!-- Bottom Section: Warning and Button -->
             <div class="flex justify-between items-center">
-              <div class="flex flex-row">
-                <p class="pr-3 xl:text-lg lg:text-[0.95re">
+              <div class="flex flex-col lg:flex-row">
+                <p class="pr-3  xl:text-lg bg-[#F8F9FB] p-1 rounded-md lg:text-[0.95re] text-[#BF2A6B] max-lg:ml-[1.125rem]">
                   {{ result.street }}
                 </p>
 
                 <div
-                  class="text-sm text-[#B90909] flex flex-row items-center justify-center"
+                  class="text-sm text-[#B90909] max-lg:ml-4 xl:ml-[0.125rem] flex flex-row items-center justify-center"
                 >
                   ️<i class="fa-solid fa-triangle-exclamation"></i>
                   <span class="pt-[0.225rem] pl-1 font-mono"
@@ -161,17 +176,21 @@
                   >
                 </div>
               </div>
+              <div class="flex flex-col max-lg:mr-4 max-lg:mb-4">
               <button
                 class="bg-[#BF2A6B] text-white px-8 py-2 rounded-md font-mono hover:bg-pink-600 text-center flex items-center"
               >
                 RÉSERVER<i class="fas fa-angle-right ml-2"></i>
               </button>
+              
+                  <p class="text-xs text-center font-mono">3 places disponible à cette date</p>
+</div>
             </div>
           </div>
         </div>
 
         <!-- Right Section with relative positioning -->
-        <div class="xl:pr-0 lg:pr-8 flex flex-col relative left-[3rem]">
+        <div class="xl:pr-0 lg:pr-8 flex flex-col lg:relative lg:left-[3rem]">
           <div class="bg-white shadow-md w-full mb-2 pb-2 rounded-md">
             <!-- Title with Blue Background -->
             <h3
@@ -256,7 +275,7 @@
                   <div class="flex flex-row justify-center">
                     <!-- First section: v-for loop for stars -->
                     <div
-                      class="flex flex-row justify-center mx-[1px] py-[0.125rem] xl:px-1 lg:px-[0.125rem] bg-[#00B67A] items-center star-container"
+                      class="flex flex-row justify-center mx-[1px] py-[0.25rem] px-1 lg:px-[0.125rem] bg-[#00B67A] items-center star-container"
                       v-for="n in 4"
                       :key="n"
                     >
@@ -267,7 +286,7 @@
 
                     <!-- Second section: Half-colored background with a star -->
                     <div
-                      class="relative flex justify-center items-center py-[0.125rem] px-1 w-full"
+                      class="relative flex justify-center items-center py-[0.25rem] px-1 lg:px-[0.125rem] w-full"
                     >
                       <!-- Left half (green) -->
                       <div
@@ -278,7 +297,7 @@
                         class="absolute top-0 right-0 w-1/2 h-full bg-[#DCDCE6]"
                       ></div>
                       <!-- Star icon -->
-                      <i class="fas fa-star text-white text-sm z-10"></i>
+                      <i class="fas fa-star text-white xl:text-sm lg:text-xs z-10"></i>
                     </div>
                   </div>
                 </div>
